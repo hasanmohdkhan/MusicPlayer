@@ -27,15 +27,20 @@ public class MusicModel {
         mAlbumArt = CoverImage;
     }
 
-
+/* Get the name of Song
+* */
     public String getmSongname() {
         return mSongname;
     }
 
+    /* Get the name of Artist
+* */
     public String getmArtistName() {
         return mArtistName;
     }
 
+    /* Get the image for CoverImage
+* */
     public int getmAlbumArt() {
         return mAlbumArt;
     }
