@@ -22,14 +22,15 @@
             android:id="@+id/albumart"
             android:layout_width="@dimen/list_item_height"
             android:layout_height="@dimen/list_item_height"
-            android:src="@drawable/music_note" />
+            android:src="@drawable/music_note" android:contentDescription="Ablum art"/>
 
         <LinearLayout
             android:id="@+id/song_list_details"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingLeft="16dp">
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp">
 
 
             <!-- 1st row is divide in to song name and heart icon -->
@@ -51,15 +52,17 @@
                     android:textAppearance="?android:textAppearanceMedium"
                     android:textColor="@color/textColor"
                     android:textStyle="bold"
-                    tools:text="Song Name" />
+                    tools:text="Song Name"
+                    />
 
 
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="right"
+                    android:gravity="end"
                     android:paddingTop="8dp"
-                    android:src="@drawable/heart" />
+                    android:src="@drawable/heart_outline"
+                    />
 
 
             </LinearLayout>
