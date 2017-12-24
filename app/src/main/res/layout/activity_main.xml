@@ -22,7 +22,7 @@
             android:id="@+id/albumart"
             android:layout_width="@dimen/list_item_height"
             android:layout_height="@dimen/list_item_height"
-            android:src="@drawable/music_note"/>
+            android:src="@drawable/music_note" />
 
         <LinearLayout
             android:id="@+id/song_list_details"
@@ -31,60 +31,63 @@
             android:orientation="vertical"
             android:paddingLeft="16dp">
 
-            <!-- Song name text view-->
+
+            <!-- 1st row is divide in to song name and heart icon -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <!-- Song name text view-->
+                <TextView
+                    android:id="@+id/song_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:paddingTop="8dp"
+                    android:text="@string/song_name"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold"
+                    tools:text="Song Name" />
+
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/heart" />
+
+
+            </LinearLayout>
+
+            <!--  artist name text view -->
             <TextView
-                android:id="@+id/song_name"
+                android:id="@+id/artist_name"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="@string/song_name"
+                android:gravity="top"
+                android:text="@string/artist_name"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:gravity="bottom"
-                android:textStyle="bold"
                 android:textColor="@color/textColor"
-                tools:text="Song Name"/>
-
-            <!-- 1st row is divide in to song name and heart icon -->
-
-                <!--  artist name text view -->
-                <TextView
-                    android:id="@+id/artist_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:gravity="top"
-                    android:text="@string/artist_name"
-                    android:textAppearance="?android:textAppearanceMedium"
-                    android:textStyle="italic"
-                    android:textColor="@color/textColor"
-                    tools:text="Artist"/>
+                android:textStyle="italic"
+                tools:text="Artist" />
 
 
+            <!-- Play icon for play song -->
+            <ImageView
+                android:id="@+id/play_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:gravity="top"
+                android:src="@drawable/play" />
 
-
-
-
-
-              <!-- Play icon for play song -->
-              <ImageView
-                  android:id="@+id/play_button"
-                  android:layout_width="16dp"
-                  android:layout_height="16dp"
-                  android:src="@drawable/playsmall"
-                  />
-
-
-
-
-
-            
-            
-            
 
         </LinearLayout>
-
-
-
 
 
     </LinearLayout>
