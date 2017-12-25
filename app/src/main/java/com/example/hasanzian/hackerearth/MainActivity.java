@@ -49,11 +49,17 @@ public class MainActivity extends AppCompatActivity {
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                  MusicModel currentMusicModel =  musicModelAdaptor.getItem(i);
-
-
-
+                    MusicModel currentMusicModel =  musicModelAdaptor.getItem(i);
                     Intent intent = new Intent(getApplicationContext(),NowPlayingActivity.class);
+                    String songTitle = currentMusicModel.getmSongname();
+                    String artistName = currentMusicModel.getmArtistName();
+
+                    intent.putExtra("title" ,songTitle);
+                    intent.putExtra("artistName" ,artistName);
+
+
+
+
                     startActivity(intent);
 
                 }
