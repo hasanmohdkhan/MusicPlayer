@@ -11,5 +11,5 @@
     <!-- Primary dark color text -->
     <color name="textColor">#000000</color>
 
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#6ec6ff</color>
 </resources>
