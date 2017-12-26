@@ -10,7 +10,7 @@
 
     <!-- TODO -->
     <TextView
-        android:id="@+id/home_screen"
+        android:id="@+id/home_screen_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/home_name"
@@ -20,7 +20,7 @@
         android:background="@color/colorPrimaryLight"
         />
     <TextView
-        android:id="@+id/fav_screen"
+        android:id="@+id/fav_screen_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
@@ -31,7 +31,7 @@
         />
 
     <TextView
-        android:id="@+id/download_screen"
+        android:id="@+id/download_screen_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/downloaded_name"

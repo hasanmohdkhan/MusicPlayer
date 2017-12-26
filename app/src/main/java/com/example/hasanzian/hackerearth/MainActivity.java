@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view);
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
 
         // Create an ArrayList of MusicModel objects
         ArrayList<MusicModel> musicModels =new ArrayList<MusicModel>();
