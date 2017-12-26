@@ -19,7 +19,11 @@
 
 
 
-        <activity android:name=".NowPlayingActivity">
+
+        <activity android:name=".NowPlayingActivity"
+            android:label="@string/now_playing_name"
+            >
+
 
         </activity>
     </application>

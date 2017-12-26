@@ -22,7 +22,9 @@
             android:id="@+id/albumart"
             android:layout_width="@dimen/list_item_height"
             android:layout_height="@dimen/list_item_height"
-            android:padding="8dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
             android:src="@drawable/music_note" android:contentDescription="Ablum art"/>
 
         <LinearLayout
@@ -30,8 +32,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingLeft="16dp"
-            android:paddingStart="16dp">
+            android:paddingLeft="8dp"
+            >
 
 
             <!-- 1st row is divide in to song name and heart icon -->

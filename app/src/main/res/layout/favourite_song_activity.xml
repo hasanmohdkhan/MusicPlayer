@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- TODO -->
+    <TextView
+        android:id="@+id/fav_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/favourite_name"
+        android:textColor="@color/textColorWhite"
+        android:textSize="30sp"
+        android:background="#F50057"
+        />
+
+
+
+
+
+
+</LinearLayout>

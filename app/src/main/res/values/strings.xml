@@ -2,4 +2,8 @@
     <string name="app_name">HackerEarth</string>
     <string name="song_name">Song Name</string>
     <string name="artist_name">Artist</string>
+    <string name="home_name">Home</string>
+    <string name="favourite_name">Favourites</string>
+    <string name="downloaded_name">Downloaded</string>
+    <string name="now_playing_name">Now Playing</string>
 </resources>

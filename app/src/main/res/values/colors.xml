@@ -12,4 +12,5 @@
     <color name="textColor">#000000</color>
 
     <color name="colorAccent">#6ec6ff</color>
+    <color name="textColorWhite">#ffff</color>
 </resources>
