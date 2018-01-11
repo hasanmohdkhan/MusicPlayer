@@ -18,18 +18,7 @@ public class MainActivity extends AppCompatActivity {
         //getActionBar().setDisplayHomeAsUpEnabled(true);
 
         // Create an ArrayList of MusicModel objects
-        ArrayList<MusicModel> musicModels =new ArrayList<MusicModel>();
-
-        musicModels.add(new MusicModel("Afreen Afreen" ,"Rahat Fateh Ali Khan, Momina Mustehsan",R.drawable.music_note));
-        musicModels.add(new MusicModel("Aik Alif" ,"Saieen Zahoor, Noori",R.drawable.music_note));
-        musicModels.add(new MusicModel("Tajdar e haram" ,"Atif Aslam",R.drawable.music_note));
-        musicModels.add(new MusicModel("Aaj Rung" ,"Amjad Sabri, Rahat Fateh Ali Khan",R.drawable.music_note));
-        musicModels.add(new MusicModel("Ae dil  Ali Zafar" ,"Sara Haider",R.drawable.music_note));
-        musicModels.add(new MusicModel("Man Amadeh am" ," Atif Aslam, Gul Panrra",R.drawable.music_note));
-        musicModels.add(new MusicModel("Bewajah" ,"Nabeel Shaukat Ali",R.drawable.music_note));
-        musicModels.add(new MusicModel("Dinae Dinae" ,"Harshadeep Kaur",R.drawable.music_note));
-        musicModels.add(new MusicModel("Tera woh pya Momina" ," Mustehsan, Asim Azhar",R.drawable.music_note));
-        musicModels.add(new MusicModel("Shamaan Pai gaiyan" ,"Rachel Viccaji, Kashif Ali",R.drawable.music_note));
+        ArrayList<MusicModel> musicModels = QueryUtils.extractEarthquakes();
 
 
 

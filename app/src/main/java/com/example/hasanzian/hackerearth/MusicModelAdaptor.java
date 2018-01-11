@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 
 /**
@@ -47,7 +49,13 @@ public class MusicModelAdaptor extends ArrayAdapter<MusicModel> {
 
 
         ImageView coverIamge =(ImageView)listItemView.findViewById(R.id.albumart);
-        coverIamge.setImageResource(currentMusicModel.getmAlbumArt());
+       // coverIamge.setImageResource(currentMusicModel.getmAlbumArt());
+
+        // cover image url
+        String coverUrl = currentMusicModel.getmAlbumArt();
+
+        Glide.with(getContext()).load(coverUrl).centerCrop().placeholder(R.drawable.music_note).into(coverIamge);
+
 
 
         return listItemView;

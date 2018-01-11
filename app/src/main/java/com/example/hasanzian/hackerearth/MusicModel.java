@@ -6,12 +6,12 @@ package com.example.hasanzian.hackerearth;
 
 public class MusicModel {
 
-   // Song Name i.e Afreen Afreen
-      private String mSongname;
-   // Artist Name i.e Rahat Fateh Ali Khan, Momina Mustehsan
-      private String mArtistName;
-   // cover_image
-      private int mAlbumArt ;
+    // Song Name i.e Afreen Afreen
+    private String mSongname;
+    // Artist Name i.e Rahat Fateh Ali Khan, Momina Mustehsan
+    private String mArtistName;
+    // cover_image
+    private String mAlbumArt;
 
         /*
     * Create a new MusicModel object.
@@ -21,14 +21,14 @@ public class MusicModel {
     * @param image is drawable reference ID that corresponds to Album art
     * */
 
-    public MusicModel(String Song, String Artist, int CoverImage) {
+    public MusicModel(String Song, String Artist, String CoverImage) {
         mSongname = Song;
         mArtistName = Artist;
         mAlbumArt = CoverImage;
     }
 
-/* Get the name of Song
-* */
+    /* Get the name of Song
+    * */
     public String getmSongname() {
         return mSongname;
     }
@@ -41,7 +41,8 @@ public class MusicModel {
 
     /* Get the image for CoverImage
 * */
-    public int getmAlbumArt() {
+
+    public String getmAlbumArt() {
         return mAlbumArt;
     }
 }
