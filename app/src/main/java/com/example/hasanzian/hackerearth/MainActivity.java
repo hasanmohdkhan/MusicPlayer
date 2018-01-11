@@ -43,9 +43,11 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(),NowPlayingActivity.class);
                     String songTitle = currentMusicModel.getmSongname();
                     String artistName = currentMusicModel.getmArtistName();
+                    String coverArt = currentMusicModel.getmAlbumArt();
 
                     intent.putExtra("title" ,songTitle);
                     intent.putExtra("artistName" ,artistName);
+                    intent.putExtra("cover" ,coverArt);
 
 
 
