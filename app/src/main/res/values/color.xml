@@ -8,6 +8,13 @@
     <!-- Primary Light color of the app (shown in the status bar) -->
     <color name="colorPrimaryLight">#6ec6ff</color>
 
+    <!-- Text color for the details of the earthquake in the list item -->
+    <color name="textColorArtistDetails">#B4BAC0</color>
+
+    <!-- Text color for the primary location of the earthquake in the list item -->
+    <color name="textColorSongDetails">#2B3D4D</color>
+
+
     <!-- Primary dark color text -->
     <color name="textColor">#000000</color>
 
